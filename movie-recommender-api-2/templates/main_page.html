@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>movie Recommendation</title>
+    </head>
+
+    <body>
+        <style>
+	body {
+  		background-image: url('static/back1.png');
+	          }
+        </style>
+        <img src="static/logo.PNG" class="logo">
+        <p><b>search your movie taste here</b></p>
+        <div class="header">
+            <form action="{{url_for('search_movies')}}">
+                <h1>Search Movie Here</h1>
+                <div class="form-box">
+                    <input type="text" class="search" name="movie" placeholder="Search..">
+                    <button class="search-btn" target="_blank" type="submit">Search</button>
+                </div>
+            </form>
+    </body>
+</html>
